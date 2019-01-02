@@ -1,16 +1,22 @@
 {
   "name": "final-jeopardy-calculator",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A final jeopardy betting calculator",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
-    "test": "mocha -r ts-node/register \"test/**/*.test.ts\""
+    "test": "mocha -r ts-node/register \"src/test/**/*.test.ts\""
   },
-  "author": "",
-  "license": "ISC",
+  "author": "tekmaven",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tekmaven/final-jeopardy-calculator.git"
+  },
+  "keywords": ["jeopardy"],
   "devDependencies": {
     "@types/chai": "^4.1.7",
     "@types/lodash": "^4.14.119",
@@ -24,5 +30,6 @@
     "tslint-config-prettier": "^1.17.0",
     "typescript": "^3.2.2"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "files": ["lib/**/*"]
 }
